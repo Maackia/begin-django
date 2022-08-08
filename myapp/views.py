@@ -3,9 +3,9 @@ from django.views.decorators.csrf import csrf_exempt
 
 nextId = 4
 topics = [
-    {'id':1, 'title':'routing', 'body':'Routing is..'},
-    {'id':2, 'title':'view', 'body':'View is..'},
-    {'id':3, 'title':'model', 'body':'Model is..'},
+    {'id':1, 'title':'Software', 'body':'소프트웨어(software)는 프로그램과 프로그램의 수행에 필요한 절차, 규칙, 관련 문서 등을 총칭합니다. <br> <blockquote>프로그램: 일련의 작업을 처리하기 위한 명령어, 관련된 데이터의 집합.<br> 자료구조: 자료의 표현, 처리, 저장방법 등을 총칭. 데이터 간의 논리적 관계, 처리 알고리즘 등</blockquote>'},
+    {'id':2, 'title':'System', 'body':'View is..'},
+    {'id':3, 'title':'SDM; Software Development Methodology', 'body':'Model is..'},
 ]
 
 def HTMLTemplate(articleTag, id=None):
@@ -27,7 +27,7 @@ def HTMLTemplate(articleTag, id=None):
     return(f'''
     <html>
     <body>
-        <h1><a href="/">DJango</a></h1>
+        <h1><a href="/">MAACKIA'S STUDY NOTE</a></h1>
         <ul>
             {ol}
         </ul>
